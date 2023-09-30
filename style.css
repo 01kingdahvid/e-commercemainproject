@@ -127,7 +127,8 @@ li .image img{
     align-items: flex-start;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 
@@ -232,71 +233,86 @@ li .image img{
 
 /* CSS for Add to Cart section */
 #decrement{
-    background-color: var(--Light-grayish-blue);
-    color: var(--Orange);
-    border: none;
-    font-size: 1rem;
+  background-color: var(--Light-grayish-blue);
+  color: var(--Orange);
+  border: none;
+  font-size: 1.4rem;
+  margin-right: 10%;
+  font-weight: 700;
 }
 #quantity{
-    color: var(--Black);
-    background-color: var(--Light-grayish-blue);
-    border: none;
-    font-size: 1rem;
+  color: var(--Black);
+  background-color: var(--Light-grayish-blue);
+  border: none;
+  font-size: 1rem;
 }
 #increment{
-    border: none;
-    color: var(--Orange);
-    background-color: var(--Light-grayish-blue);
-    font-size: 1rem;
+  border: none;
+  color: var(--Orange);
+  background-color: var(--Light-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 10%;
 }
 
 .order{
-    font-size: 0.7rem;
+  font-size: 0.7rem;
+  width: 30%;
 }
 
 .add-to-cart{
-    width: 100%;
-    margin-top: 2px;
-    display: flex;
-    justify-items: right;
+  width: 100%;
+  margin-top: 2px;
+  display: flex;
 }
 
 .add-to-cart .order{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0.45rem;
-    background-color: var(--Light-grayish-blue);
-    font-weight: 700;
-    margin-right: 0.9rem;
-    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.45rem;
+  background-color: var(--Light-grayish-blue);
+  font-weight: 700;
+  margin-right: 0.8rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  
 }
-.add-to-cart button{
-    width: 50%;
-    color: var(--White);
-    border-radius: 0.45rem;
-    border-color: var(--Orange);
-    padding: 0.2rem 1.1rem 0.2rem 1.1rem;
-    background-color: var(--Orange);
-    font-size: 8px;
-    font-weight: 700;
-    box-shadow: var(--Orange);
-    
-
+.add-to-cart a{
+  width: 200px;
+  display: flex;
+  color: var(--White);
+  border-radius: 0.45rem;
+  padding: 0.2rem 1.1rem 0.2rem 1.1rem;
+  background-color: var(--Orange);
+  font-size: 8px;
+  padding-left: 45px;
+  font-weight: 400;
 }
-
-
-
-.text-cart {
-    color: var(--White);
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
+.add-to-cart a:hover{
+  opacity: 50%;
 }
-.add-to-cart img{
+.add-to-cart a img{
+  width: 20px;
+  height: 20px;
+  color: var(--White);
   filter: brightness(5);
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+  
+}
 
+.add-to-cart a b{
+  font-size: 0.7rem;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: white;
+ text-align: center;
+}
+.add-to-cart a .text-cart:hover{
+  cursor: pointer;
 }
 
 
@@ -326,10 +342,11 @@ nav{
 .cart{
     width: 30%;
 }
+
 li .image2 img{
     margin-left: 20%;
     width: 50%; 
-    margin-top: 13%;
+    margin-top: 10%;
 }
 .heading .snickers{
     display: block;
@@ -406,32 +423,33 @@ hr{
   margin-top: -3.5rem;
 }
 
-.add-to-cart .order{
-  display: flex;
-  
-}
 .add-to-cart{
-display: block;
+  display: block;
 }
-.add-to-cart{
-  align-items: center;
+.order{
+  width: 100%;
+  height: 60px;
 }
-
-.add-to-cart #addToCart{
-  display: flex;
- margin: auto;
+#decrement{
+  margin-left: 10px;
 }
-.text-cart{
-  margin: auto;
+#increment{
+  margin-right: 10px;
 }
-.add-to-cart img{
-  margin: auto;
+.add-to-cart a{
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
-
-.cart-line{
-    display: block;
+.add-to-cart a b{
+  font-size: 17px;
+  margin-top: 10px;
 }
-
-
+.add-to-cart a img{
+  display: block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
 
 }
